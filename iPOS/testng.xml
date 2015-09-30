@@ -8,6 +8,10 @@
       <classes>
          <class name="seleniumGrid.ParallelTesting" />
       </classes>
+      
+      
+      
+      
    </test>
 
    <test name="chrome test on qaipos3">
