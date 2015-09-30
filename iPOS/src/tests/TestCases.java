@@ -28,7 +28,7 @@ public class TestCases {
 	@AfterMethod
 	public void AfterMethod() throws Exception {
 		 
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@Test
