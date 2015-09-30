@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="IETest(failed)" parallel="tests">
+    <classes>
+      <class name="MyTestPac.Test1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- MyTestPac.Test1 -->
+      <class name="seleniumGrid.ParallelTesting">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchapp"/>
+        </methods>
+      </class> <!-- seleniumGrid.ParallelTesting -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

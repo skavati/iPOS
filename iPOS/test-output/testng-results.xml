@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53509" started-at="2015-09-30T09:16:45Z" finished-at="2015-09-30T09:17:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="53509" started-at="2015-09-30T09:16:45Z" finished-at="2015-09-30T09:17:39Z">
+      <class name="tests.TestCases">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestCases@4909b8da]" name="beforeMethod" is-config="true" duration-ms="48635" started-at="2015-09-30T19:16:45Z" finished-at="2015-09-30T19:17:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.TestCases@4909b8da]" name="test1" duration-ms="163" started-at="2015-09-30T19:17:34Z" finished-at="2015-09-30T19:17:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestCases@4909b8da]" name="beforeMethod" is-config="true" duration-ms="4554" started-at="2015-09-30T19:17:34Z" finished-at="2015-09-30T19:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:tests.TestCases@4909b8da]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-09-30T19:17:34Z" finished-at="2015-09-30T19:17:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:tests.TestCases@4909b8da]" name="test2" duration-ms="144" started-at="2015-09-30T19:17:39Z" finished-at="2015-09-30T19:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:tests.TestCases@4909b8da]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-09-30T19:17:39Z" finished-at="2015-09-30T19:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- tests.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
