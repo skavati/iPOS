@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="node" value="http://10.1.11.97:5555/wd/hub"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="chrome test on qaipos3(failed)" parallel="tests">
+    <parameter name="node" value="http://10.1.11.97:5555/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="seleniumGrid.ParallelTesting">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchapp"/>
+          <include name="launchapp"/>
+          <include name="calculatepercent"/>
+        </methods>
+      </class> <!-- seleniumGrid.ParallelTesting -->
+    </classes>
+  </test> <!-- chrome test on qaipos3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
