@@ -1,5 +1,7 @@
 package tests;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -20,9 +22,9 @@ public class TestCases {
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
 		 
-		driver= BaseMethods.GetDriver("chrome");  
-		driver.manage().window().maximize();        
-       BaseMethods.driver.navigate().to("http://" + GlobalVariables.iPOSServer + "/iPOS/Web/Login.aspx"); 
+//		driver= BaseMethods.GetDriver("chrome");  
+//		driver.manage().window().maximize();        
+//       BaseMethods.driver.navigate().to("http://" + GlobalVariables.iPOSServer + "/iPOS/Web/Login.aspx"); 
 	}
 	
 	@AfterMethod
@@ -33,13 +35,18 @@ public class TestCases {
 	
 	@Test
 
- public  void test1() throws InterruptedException { //throws InterruptedException {
+ public  void test1() throws InterruptedException, IOException { //throws InterruptedException {
+		
+	Runtime.getRuntime().exec("cmd /c \"cd C:\\Users\\skava\\Downloads && java -jar selenium-server-standalone-2.47.1.jar -role hub\"");
+	
 				
-	 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
-     BaseMethods.KeyInElement(page.UserNameText, "rh");            
-     BaseMethods.KeyInElement(page.PasswordText, "rh1");           
-     BaseMethods.ClickElement(page.LoginButton);
-     System.out.println("User name and password entered successfully");   
+//	 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
+//     BaseMethods.KeyInElement(page.UserNameText, "rh");            
+//     BaseMethods.KeyInElement(page.PasswordText, "rh1");           
+//     BaseMethods.ClickElement(page.LoginButton);
+//     System.out.println("User name and password entered successfully");   
+     
+     
 //     BaseMethods.SwitchFrame(driver,"topFrame");            
 //     BaseMethods.ClickElement(page.Create);           
 //     BaseMethods.SwitchFrame(driver,"mainFrame");
@@ -82,7 +89,7 @@ public class TestCases {
 		 
 	}	   
 	
-	@Test
+	
 	 public void test2() throws InterruptedException { //throws InterruptedException {
 			
 		 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
