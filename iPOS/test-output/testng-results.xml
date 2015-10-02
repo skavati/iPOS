@@ -1,103 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" total="5" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28" started-at="2015-10-02T03:07:54Z" finished-at="2015-10-02T03:07:54Z">
+  <suite name="Suite" duration-ms="25370" started-at="2015-10-02T03:50:49Z" finished-at="2015-10-02T03:51:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28" started-at="2015-10-02T03:07:54Z" finished-at="2015-10-02T03:07:54Z">
+    <test name="chrome Test on sunskava1" duration-ms="21929" started-at="2015-10-02T03:50:49Z" finished-at="2015-10-02T03:51:11Z">
       <class name="seleniumGrid1.ParallelTesting">
-        <test-method status="SKIP" signature="calculatepercent()[pri:0, instance:seleniumGrid1.ParallelTesting@3bfdc050]" name="calculatepercent" duration-ms="3" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
+        <test-method status="PASS" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:seleniumGrid1.ParallelTesting@63a65a25]" name="launchapp" is-config="true" duration-ms="16527" started-at="2015-10-02T13:50:49Z" finished-at="2015-10-02T13:51:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://10.1.13.172:5555/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:seleniumGrid1.ParallelTesting@63a65a25]" name="calculatepercent" duration-ms="5396" started-at="2015-10-02T13:51:06Z" finished-at="2015-10-02T13:51:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:seleniumGrid1.ParallelTesting@63a65a25]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2015-10-02T13:51:11Z" finished-at="2015-10-02T13:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- seleniumGrid1.ParallelTesting -->
-      <class name="tests.TestCases">
-        <test-method status="SKIP" signature="test1()[pri:0, instance:tests.TestCases@5c3bd550]" name="test1" duration-ms="1" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:tests.TestCases@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="AfterMethod()[pri:0, instance:tests.TestCases@5c3bd550]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:tests.TestCases@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="test2()[pri:0, instance:tests.TestCases@5c3bd550]" name="test2" duration-ms="1" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="SKIP" signature="AfterMethod()[pri:0, instance:tests.TestCases@5c3bd550]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- tests.TestCases -->
-      <class name="utilities.ExcelUtils">
-        <test-method status="SKIP" signature="ReadDataFromExcel()[pri:0, instance:utilities.ExcelUtils@5e3a8624]" name="ReadDataFromExcel" duration-ms="1" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReadDataFromExcel -->
-      </class> <!-- utilities.ExcelUtils -->
-      <class name="seleniumGrid.ParallelTesting">
-        <test-method status="FAIL" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:seleniumGrid.ParallelTesting@1bce4f0a]" name="launchapp" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by @Configuration on method launchapp but has not been marked @Optional or defined
-in C:\Users\skava\AppData\Local\Temp\testng-eclipse-2008020452\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by @Configuration on method launchapp but has not been marked @Optional or defined
-in C:\Users\skava\AppData\Local\Temp\testng-eclipse-2008020452\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:148)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:647)
-	at org.testng.TestRunner.run(TestRunner.java:615)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    </test> <!-- chrome Test on sunskava1 -->
+    <test name="chrome test on qaipos3" duration-ms="25370" started-at="2015-10-02T03:50:49Z" finished-at="2015-10-02T03:51:15Z">
+      <class name="seleniumGrid1.ParallelTesting">
+        <test-method status="PASS" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:seleniumGrid1.ParallelTesting@670002]" name="launchapp" is-config="true" duration-ms="16048" started-at="2015-10-02T13:50:49Z" finished-at="2015-10-02T13:51:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://10.1.11.97:5556/wd/hub]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapp -->
-        <test-method status="SKIP" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:seleniumGrid1.ParallelTesting@3bfdc050]" name="launchapp" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method status="SKIP" signature="calculatepercent()[pri:0, instance:seleniumGrid.ParallelTesting@1bce4f0a]" name="calculatepercent" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:seleniumGrid1.ParallelTesting@670002]" name="calculatepercent" duration-ms="9308" started-at="2015-10-02T13:51:05Z" finished-at="2015-10-02T13:51:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculatepercent -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:seleniumGrid.ParallelTesting@1bce4f0a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:seleniumGrid1.ParallelTesting@670002]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2015-10-02T13:51:15Z" finished-at="2015-10-02T13:51:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:seleniumGrid1.ParallelTesting@3bfdc050]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2015-10-02T13:07:54Z" finished-at="2015-10-02T13:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- seleniumGrid.ParallelTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- seleniumGrid1.ParallelTesting -->
+    </test> <!-- chrome test on qaipos3 -->
+  </suite> <!-- Suite -->
 </testng-results>

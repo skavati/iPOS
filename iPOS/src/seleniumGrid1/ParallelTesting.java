@@ -1,15 +1,14 @@
 package seleniumGrid1;
 
 
+	import org.testng.annotations.Test;
 	import org.openqa.selenium.*;
 	import org.openqa.selenium.remote.RemoteWebDriver;
 	import org.openqa.selenium.remote.DesiredCapabilities;
 
 	import org.testng.annotations.AfterTest;
 	import org.testng.annotations.BeforeTest;
-	import org.testng.annotations.Parameters;
-	import org.testng.annotations.Test;
-
+import org.testng.annotations.Parameters;
 	import java.net.URL;
 	import java.util.concurrent.TimeUnit;
 	import java.net.MalformedURLException;
@@ -19,9 +18,9 @@ package seleniumGrid1;
 	   public String URL, Node;
 	   protected ThreadLocal<RemoteWebDriver> threadDriver = null;
 	   
-	   @Parameters({"browser","node"})
 	   
-	   @BeforeTest
+	   @Parameters({"browser","node"})
+	   @BeforeTest	   
 	   public void launchapp(String browser ,String node) throws MalformedURLException
 	   {
 	      String URL = "http://www.calculator.net";
