@@ -127,7 +127,7 @@ public class TableUtils {
 	         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 	          transformer.setOutputProperty(OutputKeys.METHOD,"xml");
 	        DOMSource source = new DOMSource(doc);
-	        StreamResult result = new StreamResult(new File("C:\\TEMP\\TESTJAVA.xml"));
+	        StreamResult result = new StreamResult(new File("C:\\SeleniumJavaFile\\TESTJAVA.xml"));
 	     
 	        // Output to console for testing
 	        // StreamResult result = new StreamResult(System.out);
