@@ -46,6 +46,16 @@ public class DBtests {
 	    // Create statement object which would be used in writing DDL and DML
 	    // SQL statement.
 	    stmt = con.createStatement();//
+	   try{
+	    ResultSet rs=stmt.executeQuery("SELECT COUNT(*) as row_count FROM qa_t_jrnals");
+	    if (rs.next()){	    
+	    System.out.println("Record Count :" +  rs.getInt("row_count"));
+	    rs.close();
+	    }
+	   }catch(SQLException ex) {
+		      System.out.println(ex);
+	   }
+	   
 	    	    // Send SQL SELECT statements to the database via the
 	    // Statement.executeQuery
 	    // method which returns the requested information as rows of data in a
@@ -54,8 +64,7 @@ public class DBtests {
 	    try {
 	      String query = "select * from qa_t_jrnals";
 	      ResultSet result = stmt.executeQuery(query);
-	      
-	      if (result.next()) {//&& !result.last()) {	    	 
+	        if (result.next()) {//&& !result.last()) {	    	 
 
 	         while (result.next()) {
 	        	
