@@ -2,11 +2,8 @@ package dbTest;
 
 //package com.seleniummaster.DatabaseUtility;
 
-import static org.junit.Assert.*;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -19,10 +16,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.PageFactory;
-
-import base.BaseMethods;
-import pageObjects.LoginPage;
 
 
 public class DBtests {
@@ -34,11 +27,9 @@ public class DBtests {
 
 	  @Before
 	  public void setUp() throws Exception {
-	    // use firefox browser
-//	    driver = new FirefoxDriver();
-		driver = new InternetExplorerDriver();  
-	    baseUrl = "http://qavm-097/iPOS/Web/Login.aspx";
-	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//		driver = new InternetExplorerDriver();  
+//	    baseUrl = "http://qavm-097/iPOS/Web/Login.aspx";
+//	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	  }
 
 	  @Test
@@ -51,27 +42,35 @@ public class DBtests {
 	    
 	    // Get connection to DB.
 //	    con = DriverManager.getConnection(url, "sa", "mssql2014");
-	    con = DriverManager.getConnection(url);
+	    con = DriverManager.getConnection(url);// for windows authentication
 	    // Create statement object which would be used in writing DDL and DML
 	    // SQL statement.
-	    stmt = con.createStatement();
-	    // Send SQL SELECT statements to the database via the
+	    stmt = con.createStatement();//
+	    	    // Send SQL SELECT statements to the database via the
 	    // Statement.executeQuery
 	    // method which returns the requested information as rows of data in a
 	    // ResultSet object.
-	    // define query to read data
+	    // define query to read datal
 	    try {
-	      String query = "select * from qa_t_logins";
+	      String query = "select * from qa_t_jrnals";
 	      ResultSet result = stmt.executeQuery(query);
-	      if (result.next()) {
-	        while (result.next()) {
+	      
+	      if (result.next()) {//&& !result.last()) {	    	 
+
+	         while (result.next()) {
+	        	
+//	         	if (result.isLast()) break;
 	          // Fetch value of "username" and "password" from "result"
 	          // object; this will return 2 existing users in the DB.	         
-	          String username = result.getString("username");
-	          String password = result.getString("userpassword");
+//	          String username = result.getString("lgn_user_name");
+//	          String password = result.getString("lgn_password");
+	        	
+	        	String username = result.getString("TRANS_DATETIME");
+		          String password = result.getString("JRNAL_NO");
 	          // print them on the console
 	          System.out.println("username :" + username);
-	          System.out.println("password: " + password);
+	          System.out.println("password: " + password);	        	
+
 	        }
 	        result.close();
 	      }
@@ -121,7 +120,7 @@ public class DBtests {
 	  @After
 	  public void tearDown() throws Exception {
 	    // close the driver
-	    driver.close();
+//	    driver.close();
 	  }
 
 	  private boolean isElementPresent(By by) {
