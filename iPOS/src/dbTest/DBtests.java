@@ -77,8 +77,8 @@ public class DBtests {
 	        	String username = result.getString("TRANS_DATETIME");
 		          String password = result.getString("JRNAL_NO");
 	          // print them on the console
-	          System.out.println("username :" + username);
-	          System.out.println("password: " + password);	        	
+	          System.out.println("Transaction Date Time :" + username);
+	          System.out.println("Jrnal no: " + password);	        	
 
 	        }
 	        result.close();
