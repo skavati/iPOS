@@ -127,5 +127,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="main/java/|tests/java/" kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/JDBC_DRIVER/sqljdbc_4.0/enu/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/JDBC_DRIVER/sqljdbc_4.0/enu/sqljdbc.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
