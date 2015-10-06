@@ -2,34 +2,98 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="56565" started-at="2015-10-02T01:37:10Z" finished-at="2015-10-02T01:38:06Z">
+=======
+  <suite name="Suite" duration-ms="25370" started-at="2015-10-02T03:50:49Z" finished-at="2015-10-02T03:51:15Z">
+>>>>>>> refs/heads/B_ParallelTest
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="56565" started-at="2015-10-02T01:37:10Z" finished-at="2015-10-02T01:38:06Z">
       <class name="tests.TestCases">
         <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestCases@153f5a29]" name="beforeMethod" is-config="true" duration-ms="49547" started-at="2015-10-02T11:37:10Z" finished-at="2015-10-02T11:37:59Z">
+=======
+    <test name="chrome Test on sunskava1" duration-ms="21929" started-at="2015-10-02T03:50:49Z" finished-at="2015-10-02T03:51:11Z">
+      <class name="seleniumGrid1.ParallelTesting">
+        <test-method status="PASS" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:seleniumGrid1.ParallelTesting@63a65a25]" name="launchapp" is-config="true" duration-ms="16527" started-at="2015-10-02T13:50:49Z" finished-at="2015-10-02T13:51:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://10.1.13.172:5555/wd/hub]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> refs/heads/B_ParallelTest
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- beforeMethod -->
         <test-method status="PASS" signature="test1()[pri:0, instance:tests.TestCases@153f5a29]" name="test1" duration-ms="192" started-at="2015-10-02T11:37:59Z" finished-at="2015-10-02T11:37:59Z">
+=======
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:seleniumGrid1.ParallelTesting@63a65a25]" name="calculatepercent" duration-ms="5396" started-at="2015-10-02T13:51:06Z" finished-at="2015-10-02T13:51:11Z">
+>>>>>>> refs/heads/B_ParallelTest
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- test1 -->
         <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestCases@153f5a29]" name="beforeMethod" is-config="true" duration-ms="5967" started-at="2015-10-02T11:37:59Z" finished-at="2015-10-02T11:38:05Z">
+=======
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:seleniumGrid1.ParallelTesting@63a65a25]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2015-10-02T13:51:11Z" finished-at="2015-10-02T13:51:11Z">
+>>>>>>> refs/heads/B_ParallelTest
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- beforeMethod -->
         <test-method status="PASS" signature="AfterMethod()[pri:0, instance:tests.TestCases@153f5a29]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-10-02T11:37:59Z" finished-at="2015-10-02T11:37:59Z">
+=======
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- seleniumGrid1.ParallelTesting -->
+    </test> <!-- chrome Test on sunskava1 -->
+    <test name="chrome test on qaipos3" duration-ms="25370" started-at="2015-10-02T03:50:49Z" finished-at="2015-10-02T03:51:15Z">
+      <class name="seleniumGrid1.ParallelTesting">
+        <test-method status="PASS" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:seleniumGrid1.ParallelTesting@670002]" name="launchapp" is-config="true" duration-ms="16048" started-at="2015-10-02T13:50:49Z" finished-at="2015-10-02T13:51:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://10.1.11.97:5556/wd/hub]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> refs/heads/B_ParallelTest
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- AfterMethod -->
         <test-method status="PASS" signature="test2()[pri:0, instance:tests.TestCases@153f5a29]" name="test2" duration-ms="146" started-at="2015-10-02T11:38:05Z" finished-at="2015-10-02T11:38:05Z">
+=======
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="calculatepercent()[pri:0, instance:seleniumGrid1.ParallelTesting@670002]" name="calculatepercent" duration-ms="9308" started-at="2015-10-02T13:51:05Z" finished-at="2015-10-02T13:51:15Z">
+>>>>>>> refs/heads/B_ParallelTest
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- test2 -->
         <test-method status="PASS" signature="AfterMethod()[pri:0, instance:tests.TestCases@153f5a29]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2015-10-02T11:38:05Z" finished-at="2015-10-02T11:38:05Z">
+=======
+        </test-method> <!-- calculatepercent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:seleniumGrid1.ParallelTesting@670002]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2015-10-02T13:51:15Z" finished-at="2015-10-02T13:51:15Z">
+>>>>>>> refs/heads/B_ParallelTest
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- AfterMethod -->
       </class> <!-- tests.TestCases -->
       <class name="utilities.ExcelUtils">
@@ -40,4 +104,10 @@
       </class> <!-- utilities.ExcelUtils -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- seleniumGrid1.ParallelTesting -->
+    </test> <!-- chrome test on qaipos3 -->
+  </suite> <!-- Suite -->
+>>>>>>> refs/heads/B_ParallelTest
 </testng-results>
