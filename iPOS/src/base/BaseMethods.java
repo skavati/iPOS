@@ -57,7 +57,10 @@ public static  WebDriver driver ;
            
            switch (BrowserName.toLowerCase())
            {
-               case "ie":                
+               case "ie":    
+//              	 File file = new File("C:/Selenium/IE/IEDriverServer.exe");
+//              	 System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+              	 System.setProperty("webdriver.ie.driver", "C:/Selenium/IE/IEDriverServer.exe");
                    driver = new InternetExplorerDriver();                     
                    break;
 

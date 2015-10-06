@@ -1,10 +1,8 @@
 package tests;
 
-import java.io.IOException;
-
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod; 
@@ -12,7 +10,6 @@ import org.testng.annotations.AfterMethod;
 import base.BaseMethods;
 import base.GlobalVariables;
 import pageObjects.LoginPage;
-import utilities.TableUtils;
 
 public class TestCases {
 	public static WebDriver driver;
@@ -36,23 +33,18 @@ public class TestCases {
 	
 	@Test
 
- public  void test1() throws InterruptedException, IOException { //throws InterruptedException {
-		
-//	Runtime.getRuntime().exec("cmd /c \"cd C:\\Users\\skava\\Downloads && java -jar selenium-server-standalone-2.47.1.jar -role hub\"");
-	
+ public  void test1() throws InterruptedException { //throws InterruptedException {
 				
-   LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
-    BaseMethods.KeyInElement(page.UserNameText, "rh");            
+	 LoginPage page = PageFactory.initElements(driver, LoginPage.class);	
+     BaseMethods.KeyInElement(page.UserNameText, "rh");            
      BaseMethods.KeyInElement(page.PasswordText, "rh1");           
      BaseMethods.ClickElement(page.LoginButton);
      System.out.println("User name and password entered successfully");   
+//     BaseMethods.SwitchFrame(driver,"topFrame");            
+//     BaseMethods.ClickElement(page.Create);           
+//     BaseMethods.SwitchFrame(driver,"mainFrame");
+//     TableUtilities.TableToXML(driver,"Raised By");
      
-     
-     BaseMethods.SwitchFrame(driver,"topFrame");            
-     BaseMethods.ClickElement(page.Create);           
-     BaseMethods.SwitchFrame(driver,"mainFrame");
-     TableUtils.TableToXML(driver,"Raised By");
-    
 //     System.out.println("\t" + TableUtilities.GetTable("Created Date").getAttribute("class"));
 //     WebElement AddItem=BaseMethods.GetElement(driver,(By.id("ibAdd")));
 //     BaseMethods.ClickElement(AddItem);
