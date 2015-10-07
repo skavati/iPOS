@@ -3,22 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="utilities.ExcelUtils">
+      <class name="appium.MobileTest">
         <methods>
-          <include name="ReadDataFromExcel"/>
+          <include name="Cal"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- utilities.ExcelUtils -->
-      <class name="seleniumGrid1.ParallelTesting">
-        <methods>
-          <include name="calculatepercent"/>
-        </methods>
-      </class> <!-- seleniumGrid1.ParallelTesting -->
-      <class name="tests.TestCases">
-        <methods>
-          <include name="test1"/>
-          <include name="test2"/>
-        </methods>
-      </class> <!-- tests.TestCases -->
+      </class> <!-- appium.MobileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
