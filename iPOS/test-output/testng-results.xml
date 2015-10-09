@@ -1,77 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1151" started-at="2015-10-06T22:52:48Z" finished-at="2015-10-06T22:52:49Z">
+  <suite name="Default suite" duration-ms="103797" started-at="2015-10-08T05:01:06Z" finished-at="2015-10-08T05:02:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1151" started-at="2015-10-06T22:52:48Z" finished-at="2015-10-06T22:52:49Z">
-      <class name="appium.MobileTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:appium.MobileTest@2b98378d]" name="setUp" is-config="true" duration-ms="0" started-at="2015-10-07T09:52:48Z" finished-at="2015-10-07T09:52:48Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[A new session could not be created. (Original error: The following desired capabilities are required, but were not provided: platformName, deviceName) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 805 milliseconds
-Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
-System info: host: 'Qaipos2', ip: '10.1.11.117', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: The following desired capabilities are required, but were not provided: platformName, deviceName) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 805 milliseconds
-Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
-System info: host: 'Qaipos2', ip: '10.1.11.117', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_51'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
-	at appium.MobileTest.setUp(MobileTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+    <test name="Default test" duration-ms="103797" started-at="2015-10-08T05:01:06Z" finished-at="2015-10-08T05:02:50Z">
+      <class name="selendroid.MobileWebTest">
+        <test-method status="PASS" signature="startSelendroidServer()[pri:0, instance:selendroid.MobileWebTest@4c70fda8]" name="startSelendroidServer" is-config="true" duration-ms="85012" started-at="2015-10-08T16:01:06Z" finished-at="2015-10-08T16:02:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Cal()[pri:0, instance:appium.MobileTest@2b98378d]" name="Cal" duration-ms="0" started-at="2015-10-07T09:52:49Z" finished-at="2015-10-07T09:52:49Z">
+        </test-method> <!-- startSelendroidServer -->
+        <test-method status="PASS" signature="shouldSearchWithEbay()[pri:0, instance:selendroid.MobileWebTest@4c70fda8]" name="shouldSearchWithEbay" duration-ms="18742" started-at="2015-10-08T16:02:31Z" finished-at="2015-10-08T16:02:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Cal -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:appium.MobileTest@2b98378d]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-10-07T09:52:49Z" finished-at="2015-10-07T09:52:49Z">
+        </test-method> <!-- shouldSearchWithEbay -->
+        <test-method status="PASS" signature="stopSelendroidServer()[pri:0, instance:selendroid.MobileWebTest@4c70fda8]" name="stopSelendroidServer" is-config="true" duration-ms="41" started-at="2015-10-08T16:02:50Z" finished-at="2015-10-08T16:02:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- appium.MobileTest -->
+        </test-method> <!-- stopSelendroidServer -->
+      </class> <!-- selendroid.MobileWebTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
