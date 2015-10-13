@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selendroid.MobileWebTest">
+      <class name="appium.MobileTest">
         <methods>
-          <include name="startSelendroidServer"/>
-          <include name="shouldSearchWithEbay"/>
+          <include name="iPOSMobile_Login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- selendroid.MobileWebTest -->
+      </class> <!-- appium.MobileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

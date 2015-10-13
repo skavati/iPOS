@@ -7,12 +7,13 @@ import cucumber.api.junit.Cucumber;
  
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "Feature"
-		,glue={"stepDefinition"}
+		features = "src/featureFiles"
+		,glue={"stepDefinition"},format = {"pretty"}
 		)
  
 
 
 public class CucumberRunner {
+	
 
 }

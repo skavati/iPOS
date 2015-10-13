@@ -12,12 +12,12 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class Test {	
-	InternetExplorerDriver driver = null;
+	public static InternetExplorerDriver driver;
 
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		InternetExplorerDriver driver = new InternetExplorerDriver();
+		 driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://www.store.demoqa.com");
 	    
@@ -49,7 +49,8 @@ public class Test {
 	
 	@When("^User LogOut from the Application$")
 	public void user_LogOut_from_the_Application() throws Throwable {
-		driver.findElement (By.xpath(".//*[@id='account_logout']/a")).click();
+//		driver.findElement (By.xpath(".//*[@id='account_logout']/a")).click();
+		driver.quit();
 	}
 
 	@Then("^Message displayed LogOut Successfully$")
