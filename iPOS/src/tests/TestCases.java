@@ -78,7 +78,9 @@ public class TestCases {
 	 FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\Test1_CP1.png"));     
      Thread.sleep(2000);
      test.log(LogStatus.INFO, "Snapshot below: "+ test.addScreenCapture("C:\\Screenshots\\Test1.png"));  
-     
+     Thread.sleep(2000);
+     test.log(LogStatus.INFO, "VideoCapute below: "+ test.addScreencast("C:\\Work\\VideoCapture\\301014_1150.wmv"));
+     Thread.sleep(3000);
      System.out.println("User name and password entered successfully");   
 //     test.log(LogStatus.ERROR, "testing error ", "error log");
 //     test.log(LogStatus.ERROR, "testing error ", "error log");

@@ -2,40 +2,20 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28101" started-at="2015-10-20T22:54:34Z" finished-at="2015-10-20T22:55:02Z">
+  <suite name="Default suite" duration-ms="24900" started-at="2015-10-21T03:25:53Z" finished-at="2015-10-21T03:26:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28101" started-at="2015-10-20T22:54:34Z" finished-at="2015-10-20T22:55:02Z">
-      <class name="tests.TestCases">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestCases@1e7c7811]" name="beforeMethod" is-config="true" duration-ms="8490" started-at="2015-10-21T09:54:34Z" finished-at="2015-10-21T09:54:43Z">
+    <test name="Default test" duration-ms="24900" started-at="2015-10-21T03:25:53Z" finished-at="2015-10-21T03:26:18Z">
+      <class name="scroll.TestScroll">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:scroll.TestScroll@46d56d67]" name="Test1" duration-ms="13724" started-at="2015-10-21T14:25:53Z" finished-at="2015-10-21T14:26:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.TestCases@1e7c7811]" name="test1" duration-ms="5570" started-at="2015-10-21T09:54:43Z" finished-at="2015-10-21T09:54:48Z">
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="Test2()[pri:0, instance:scroll.TestScroll@46d56d67]" name="Test2" duration-ms="11165" started-at="2015-10-21T14:26:07Z" finished-at="2015-10-21T14:26:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:tests.TestCases@1e7c7811]" name="AfterMethod" is-config="true" duration-ms="1365" started-at="2015-10-21T09:54:48Z" finished-at="2015-10-21T09:54:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.TestCases@1e7c7811]" name="beforeMethod" is-config="true" duration-ms="3908" started-at="2015-10-21T09:54:50Z" finished-at="2015-10-21T09:54:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:tests.TestCases@1e7c7811]" name="test2" duration-ms="7348" started-at="2015-10-21T09:54:54Z" finished-at="2015-10-21T09:55:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:tests.TestCases@1e7c7811]" name="AfterMethod" is-config="true" duration-ms="1334" started-at="2015-10-21T09:55:01Z" finished-at="2015-10-21T09:55:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="AfterClass()[pri:0, instance:tests.TestCases@1e7c7811]" name="AfterClass" is-config="true" duration-ms="74" started-at="2015-10-21T09:55:02Z" finished-at="2015-10-21T09:55:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterClass -->
-      </class> <!-- tests.TestCases -->
+        </test-method> <!-- Test2 -->
+      </class> <!-- scroll.TestScroll -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -263,6 +263,7 @@ public class BaseMethods {
 		try {
 			Select select = new Select(WebElement);
 			select.selectByValue(Value);
+//			select.selectByVisibleText("");
 		} catch (NoSuchElementException e) {
 			System.out.println("Unable to select value " + Value);
 
