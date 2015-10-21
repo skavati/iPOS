@@ -6,7 +6,7 @@
    <parameter name="browser" value="chrome" />
    <parameter name="node" value="http://10.1.13.172:5555/wd/hub" />
       <classes>
-         <class name="seleniumGrid1.ParallelTesting" />
+    <class name="seleniumGrid1.ParallelTesting" />
       </classes>
        </test>
    <test name="chrome test on qaipos3">
